@@ -1,6 +1,6 @@
 FROM php:7.2-apache
 
-RUN apt-get update && apt-get install -y git zip unzip zlib1g-dev
+RUN apt-get update && apt-get install -y git zip unzip zlib1g-dev libgmp-dev
 
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 
