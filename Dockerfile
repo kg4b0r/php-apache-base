@@ -1,6 +1,6 @@
 FROM php:7.3-apache
 
-RUN apt-get update && apt-get install -y git zip unzip zlib1g-dev libgmp-dev build-essential libssl-dev zlib1g-dev libpng-dev libjpeg-dev libfreetype6-dev
+RUN apt-get update && apt-get install -y git libzip-dev zip unzip zlib1g-dev libgmp-dev build-essential libssl-dev zlib1g-dev libpng-dev libjpeg-dev libfreetype6-dev
 
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 
